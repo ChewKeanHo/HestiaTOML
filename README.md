@@ -25,7 +25,8 @@ This project was initiated primarily because of:
    syntax.
 3. **Consumption freedom** - HestiaTOML makes NO decision and NO assumption on
    how you consume the parsed data: use the corresponding data type sanitization
-   function to convert from `string` into your desired data type, not here.
+   function and libraries to convert from `string` into your desired data type;
+   not here.
 5. **Simple to integrate** - simple enough to use for all supported programming
    languages.
 
@@ -56,6 +57,12 @@ Please do note that branches like `main`, `next`, and `experimental` are for
 maintenance & development uses (as in, the production factory itself). Hence,
 please avoid them and only use it at your own risk.
 
+
+### Dependencies
+
+This library depends on the following libraries:
+
+1. **HestiaSTRING** - https://github.com/ChewKeanHo/HestiaSTRING
 
 
 ### Javascript|Typescript Ecosystems
@@ -89,7 +96,7 @@ For always latest release, please use the `latest` version tag. Example:
   ...
   "dependencies": {
     ...
-    "@chewkeanho/hestiaSTRING": "git+https://github.com/ChewKeanHo/hestiaSTRING.git#[VERSION]_npm",
+    "@chewkeanho/hestiaSTRING": "git+https://github.com/ChewKeanHo/hestiaSTRING.git#latest_npm",
     ...
     "@chewkeanho/hestiaTOML": "git+https://github.com/ChewKeanHo/hestiaTOML.git#latest_npm"
     ...
@@ -119,4 +126,4 @@ The libraries are based on the following data sources:
 
 ## License
 
-This project is licensed under [OSI compliant Apache 2.0 License](LICENSE.txt).
+This project is licensed under [Chew Kean Ho's Hestia License Agreement](LICENSE.pdf).
