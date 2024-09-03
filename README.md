@@ -8,12 +8,7 @@ This repository facilitates
 [Tom's Obvious Minimal Language](https://github.com/toml-lang/toml) operation
 for all Hestia Libraries user. This library uses the character-based
 streaming with low memory and low footprint (e.g.
-microcontroller adata processing) considerations. Moreover, it uses the
-*"everything is a string"* convention to avoid bloating the library with all
-other libraries data sanitization functions. In short, HestiaTOML
-**SHALL NOT AND WILL NOT** dictate when, what, and how the value is sanitized
-and validated. It only makes sure the TOML syntax are correctly done and parse
-from it.
+microcontroller adata processing) considerations.
 
 
 
@@ -28,9 +23,9 @@ This project was initiated primarily because of:
 2. **Friendly to low memory and low footprint environment** - using simple
    string character streaming algorithm to parse the required data from TOML
    syntax.
-3. **Consumption freedom** - HestiaTOML makes no decision and no assumption on
+3. **Consumption freedom** - HestiaTOML makes NO decision and NO assumption on
    how you consume the parsed data: use the corresponding data type sanitization
-   function to convert from string into your desired data type.
+   function to convert from `string` into your desired data type, not here.
 5. **Simple to integrate** - simple enough to use for all supported programming
    languages.
 
